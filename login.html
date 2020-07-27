@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="loginCss.css">
+    <script src="login.js"></script>
+    <script src="https://kit.fontawesome.com/943e6c43db.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        #errorText{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="allClass">
+    <div class="header">
+        <div class="isiJudul">
+            <div class="Gambar-Judul">
+                <img src="ganbar_hati.png" alt="">
+            </div>
+            <div class="Judul-tulisan">
+                <h1> MeKnots </h1>
+                <h2> Bring You Healthy Life</h2>
+            </div>
+        </div>
+
+        <div class="isiHeader">
+            <div class="isiKiri">
+                <a href="register.html">REGISTER </a>
+                <div class="verticalLine"></div>
+                <a href="login.html">LOGIN</a>
+            </div>
+            <div class="isiKanan">
+                <!--Member harus register dan login dulu baru bisa akses semua halaman-->
+                <!--<a href="home.html">Home</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="rating.html">Rating</a>
+                <a href="forum.html">Forum</a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="bagianTengah">
+        <div class="InputTengah">
+            <h2 id="titleLogin"> LOG IN </h2>
+            <form action="" id="formLogin" name="login" onsubmit=" return validationLogin()">
+                <!-- Username -->
+                <div class="inputAtribut">
+                    <input class="input-field" type="text" placeholder="Username" id="username" name="tUsername">
+                </div>
+                    <br>
+                <!-- Password -->
+                <div class="inputAtribut">
+                    <input class="input-field" type="password" placeholder="Password" id="password" name="tPassword">
+                </div>
+
+                <br>
+            </form> 
+            <div class="inputAtributButtom">
+                <label id="errorText"></label>
+            </div>
+            <div class="inputAtributButtom">
+                <button  id="loginButton" onclick="validationLogin()" > LOG IN </button>
+            </div>
+            <div class="Register">
+                <div class="tambahan1">
+                    <h3> Forgot password? </h3>
+                    <h3> Don't have any account? </h3>
+                </div>
+        
+                <div class="tambahan2">
+                    <a href="register.html"> Sign up here </a>
+                </div>
+            </div>
+       
+            <div class="anotherLogin">
+                <h3 id="loginLain"> _____________________ Log in with _____________________ </h3>
+                <div class="logo">
+                    <i class="fab fa-google"></i> <a href="http://account.google.com"> Google</a> 
+                    <i class="fab fa-facebook"></i> <a href="http://facebook.com"> Facebook </a> 
+                    <i class="fab fa-line"></i> <a href="http://line.me"> Line </a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="footer">
+        <div class="informasiKiri">
+            <h1> MeKnots </h1>
+            <h2> Contact Us </h2>
+            <h3> Address: Jln. Metro Duta Kav UE Pondok Indah, Jakarta Selatan, DKI Jakarta </h3>
+            <h3> Email: meknotsoffiacial@yahoo.com </h3>
+            <h3> Phone: 081236938742 </h3>
+        </div>
+
+        <div class="informasiKanan">
+            <h2> Follow Us </h2>
+            <h3> Facebook: MeKnotsOfficial</h3>
+            <h3> Instagram: MeKnots</h3>
+            <h3> Twitter: @meknotsid </h3>
+        </div>
+    </div>
+    
+</body>
+</html>

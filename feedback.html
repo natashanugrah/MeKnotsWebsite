@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="feedbackCss.css">
+    <script src="feedback.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+        #errorText{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="allClass">
+    <div class="header">
+        <div class="isiJudul">
+            <div class="Gambar-Judul">
+                <img src="ganbar_hati.png" alt="">
+            </div>
+            <div class="Judul-tulisan">
+                <h1> MeKnots </h1>
+                <h2> Bring You Healthy Life</h2>
+            </div>
+        </div>
+
+        <div class="isiHeader">
+            <div class="isiKiri">
+                <a href="register.html">REGISTER </a>
+                <div class="verticalLine"></div>
+                <a href="login.html">LOGIN</a>
+            </div>
+            <div class="isiKanan">
+                <a href="home.html">Home</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="rating.html">Rating</a>
+                <a href="forum.html">Forum</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="isiFeedback">
+        <div class="kiri">
+            <h1></h1>
+        </div>
+        <div class="kanan">
+            <h2 id="title">WE HEAR YOU!</h2>
+            <p id="title1">  Use the form below to send us your comments or report any problems you experienced for finding the products or service on our website. We read all the feedback, but please note that we cannot respond to the comment you submit. </p>
+            <form action="" id="formFeedback" name="formfeedback" onsubmit=" return validationFeedback()">
+                <!--Choose Feedback-->
+                <div class="inputAtribut">
+                    <h3 id="tFeedback"> I Have Feedback About: </h3> 
+                <select name="droplist_Feedback" id="feedback">
+                        <option value="">Choose Feedback</option>
+                        <option value="website"> Website Issues </option>
+                        <option value="products"> Products Issues </option>
+                        <option value="service"> Service Issues </option>
+                </select>
+                </div>
+            <!--Name-->
+            <div class="inputAtribut">
+                <h3 id="tName"> Name: </h3>
+                <input class="input-field" type="text" id="name" name="tfName">
+            </div>
+
+            <!--Email-->
+            <div class="inputAtribut">
+                <h3 id="tEmail"> Email: </h3>
+                <input class="input-field" type="text" id="email" name="tfEmail">
+            </div>
+
+            <!--Comments-->
+            <div class="inputAtribut">
+                <h3 id="tComments"> Comments: </h3>
+                <textarea rows="3" cols="30" name="comments" id="comments" name="tfComments"></textarea>
+            </div>
+
+            <!--Agreement-->
+            <div class="inputAtributTermAndCondition">
+                <input class="input-field-checkBox" type ="checkbox" id="aggreement" name="cAgreement"> I have read all the Policy statement in MeKnots Website</input>
+            </div>
+
+            <br>
+        </form>
+
+        <div class="inputAtributButtom">
+            <label id="errorText"></label>
+        </div>
+        <div class="inputAtributButtom">
+            <button  id="feedbackButton" onclick="validationFeedback()" > Submit Feedback </button>
+        </div>
+
+        </div>
+        
+    </div>
+
+    <div class="footer">
+        <div class="informasiKiri">
+            <h1> MeKnots </h1>
+            <h2> Contact Us </h2>
+            <h3> Address: Jln. Metro Duta Kav UE Pondok Indah, Jakarta Selatan, DKI Jakarta </h3>
+            <h3> Email: meknotsoffiacial@yahoo.com </h3>
+            <h3> Phone: 081236938742 </h3>
+        </div>
+
+        <div class="informasiKanan">
+            <h2> Follow Us </h2>
+            <h3> Facebook: MeKnotsOfficial</h3>
+            <h3> Instagram: MeKnots</h3>
+            <h3> Twitter: @meknotsid </h3>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

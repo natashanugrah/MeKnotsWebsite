@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Forum.css">
+    <script src="forum.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <style>
+        #errorText{
+            color: red;
+            font-weight: bold;
+        }
+
+        #errorText2{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="allClass">
+    <div class="header">
+        <div class="isiJudul">
+            <div class="Gambar-Judul">
+                <img src="ganbar_hati.png" alt="">
+            </div>
+            <div class="Judul-tulisan">
+                <h1> MeKnots </h1>
+                <h2> Bring You Healthy Life</h2>
+            </div>
+        </div>
+        <div class="isiHeader">
+            <div class="isiKiri">
+                <a href="register.html">REGISTER </a>
+                <div class="verticalLine"></div>
+                <a href="login.html">LOGIN</a>
+            </div>
+            <div class="isiKanan">
+                <a href="home.html">Home</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="rating.html">Rating</a>
+                <a href="forum.html">Forum</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="isiForum">
+        <div class="Judul">
+            <h2 id="title"> Forum Disscussion </h2>
+            <p id="titleKanan"> We know that discussion is important in everyday life. Through our website, you are expected to know what you are looking for and you need. Because this is universal, please pay attention to the way you type. Thank You. </p>
+        </div>
+
+        <div class="Isi-input-Forum">
+            <div class="Sebelah-kiri">
+                <!--Choose Topic-->
+                <div class="inputAtributTopic">
+                    <h3 id="tTopic"> Choose The Topic </h3> 
+                <select name="droplist_topic" id="topic">
+                        <option value="medicine"> Medicine </option>
+                        <option value="hospital"> Hospital </option>
+                        <option value="covid"> COVID-19 </option>
+                        <option value="vitamin"> Vitamin </option>
+                </select>
+                </div> 
+                
+                <div class="replyThread">
+                    <div class="JudulThreat">
+                        <h3 id="titleThread"> Thread Title: </h3>
+                        <h3 id="titleThread2"> What the best medicine for COVID-19? </h3>
+                    </div>
+                   
+                    
+                    <div class="theThread">
+                        <h3 id="namaAkun1"> Account Name: Keira Alesha </h3>
+                        <h4 id="garis"> _____________________ </h4>
+                        <p> Hello people of the internet. We know that COVID-19 has spread all over the world. However, this caused me fear because I had to keep 					coming to work at the company. Is there a cure for this disease? If there isn't, is there any medicine to maintain my stamina 				so that I stay healthy? thanks. </p>
+                        <button type="button">Reply The Thread</button>
+                    </div>
+                </div>
+            </div>
+            <div class="garisVertical"></div>
+            <div class="bagianKanan">
+                <h3 id="tambahThread"> Add Your Thread </h3>
+                <br>
+                <h3 id="namaAkun3"> Account Name: Natasha Anugrah </h3>
+    
+                <!--Form Add Thread-->
+                <form action="" id="formForum2" name="addForum" onsubmit=" return validationThread()">
+                    <!--Choose the topic-->
+                        <div class="inputAtribut">
+                         <select name="droplist_topics" id="topic2">
+                            <option value="">Choose the topic</option>
+                                 <option value="medicines"> Medicine </option>
+                                 <option value="hospitals"> Hospital </option>
+                                 <option value="covids"> COVID-19 </option>
+                                 <option value="vitamins"> Vitamin </option>
+                                 <option value="vitamins"> New Topic </option>
+                         </select>
+                         </div> 
+    
+                         <!--Subject-->
+                        <div class="inputAtribut">
+                            <h3 id="tTitle"> Subject </h3>
+                            <input class="input-field" type="text" id="subject" name="tfSubject">
+                        </div>
+    
+                        <!--Content of Thread-->
+                        <div class="inputAtribut">
+                            <h3 id="tContents"> The Content of Thread: </h3>
+                            <textarea rows="3" cols="30" name="addThreads" id="addThread" name="tfAddThread"></textarea>
+                        </div>
+               
+                </form>
+    
+                <div class="inputAtribut">
+                    <label id="errorText2"></label>
+                </div>
+                <div class="inputAtributButton">
+                        <button  id="addButton" onclick="validationThread()" > ADD THREAD </button>
+                </div>
+           </div>
+       </div>
+        </div>
+    </div>
+
+
+    
+    <div class="footer">
+        <div class="informasiKiri">
+            <h1> MeKnots </h1>
+            <h2> Contact Us </h2>
+            <h3> Address: Jln. Metro Duta Kav UE Pondok Indah, Jakarta Selatan, DKI Jakarta </h3>
+            <h3> Email: meknotsoffiacial@yahoo.com </h3>
+            <h3> Phone: 081236938742 </h3>
+        </div>
+
+        <div class="informasiKanan">
+            <h2> Follow Us </h2>
+            <h3> Facebook: MeKnotsOfficial</h3>
+            <h3> Instagram: MeKnots</h3>
+            <h3> Twitter: @meknotsid </h3>
+        </div>
+    </div>
+    
+</body>
+</html>

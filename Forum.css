@@ -1,0 +1,163 @@
+.allClass{
+    margin: 0;
+}
+.isiJudul{
+    display: flex;
+}
+.Gambar-Judul img{
+    width: 10vw;
+    height: 8vw;
+}
+.Judul-tulisan h1 {
+    margin: 0;
+    font-size: 2vw;
+    color: black;
+    font-family: Arial;
+}
+.Judul-tulisan h2 {
+    margin: 0;
+    font-size: 1.5vw;
+    color: black;
+    font-family: Arial;
+}
+.isiHeader{
+    padding: 1vw;
+    display: flex;
+    background-color: blanchedalmond;
+}
+.isiKiri{
+    width: 70%;
+    display: flex;
+}
+.isiKiri a {
+    font-size: 1vw;
+    text-decoration: none;
+    color: blue;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+.verticalLine{
+    border-left: 1px solid black;
+    height: 1.3vw;
+    margin-left: 0.5vw;
+}
+.isiKanan{
+    width: 30%;
+}
+.isiKanan a{
+    font-size: 1vw;
+    text-decoration: none;
+    color: black;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+.isiForum{
+    background-color:#027DB4 ;
+}
+
+.Judul{
+    display: flex;
+}
+.Judul h2, p {
+    width: 50%;
+    text-align: center;
+}
+.Judul h2 {
+    margin-top: 1.5vw;
+}
+.Judul p {
+    text-align: left;
+    margin-right: 10vw;
+}
+.Isi-input-Forum{
+    display: flex;
+}
+.Sebelah-kiri{
+    margin-left: 3vw;
+    width: 49%;
+}
+.inputAtributTopic select{
+    width: 50%;
+}
+.theThread{
+    background-color: #FACD91;
+    padding: 3vw;
+    margin-right: 10vw;
+    margin-bottom: 5vw;
+}
+.replyThread{
+    padding-bottom: 3vw;
+}
+.replyThread h3 {
+    font-size: 1vw;
+}
+.JudulThreat {
+    display: flex;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.JudulThreat h3 {
+    margin-right: 1vw;
+}
+.theThread h3,h4{
+    margin: 0vw;
+}
+.theThread p {
+    text-align: justify;
+}
+.theThread button{
+   margin-left: 5vw;
+   font-size: 1vw;
+   background-color: red;
+   padding-left: 2vw;
+   padding-right: 2vw;
+   padding-top: 1vw;
+   padding-bottom: 1vw;
+}
+.garisVertical {
+    width: 1%;
+    border-left: 1px solid black;
+    height: 40vw;
+    margin-left: 0.5vw;
+}
+.bagianKanan {
+    width: 49%;
+    text-align: center;
+}
+.inputAtributButton button{
+    color: white;
+    background-color: red;
+    border: red;
+    font-size: 1vw;
+
+    margin-top: 3vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+   
+}
+
+.footer{
+    background-color: #c1c1c1;
+    display: flex;
+    padding-top: 3vw;
+    padding-bottom: 2vw;
+}
+.informasiKiri{
+    width: 50%;
+    margin-left: 3vw;
+}
+.informasiKanan{
+    width: 50%;
+    margin-left: 5vw;
+}
+.informasiKiri h1,h2,h6{
+    margin: 0;
+    margin-bottom: 1vw;
+}
+.informasiKanan h2,h3 {
+    margin: 0;
+    margin-bottom: 1vw;
+}

@@ -1,0 +1,111 @@
+<!-- buat bintang: https://codepen.io/GeoffreyCrofte/pen/jEkBL-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="ratingCss.css">
+    <script src="rating.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating</title>
+    <style>
+        #errorText{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="allClass">
+    <div class="header">
+        <div class="isiJudul">
+            <div class="Gambar-Judul">
+                <img src="ganbar_hati.png" alt="">
+            </div>
+            <div class="Judul-tulisan">
+                <h1> MeKnots </h1>
+                <h2> Bring You Healthy Life</h2>
+            </div>
+        </div>
+
+        <div class="isiHeader">
+            <div class="isiKiri">
+                <a href="register.html">REGISTER </a>
+                <div class="verticalLine"></div>
+                <a href="login.html">LOGIN</a>
+            </div>
+            <div class="isiKanan">
+                <a href="home.html">Home</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="rating.html">Rating</a>
+                <a href="forum.html">Forum</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="isiRating">
+        <div class="Rating">
+            <h2 id="title">Give Us Your Rating </h2>
+            <div class="bagian1">
+                <h3 id="title1">Hello Natasha Anugrah, </h3>
+                <p id="title2"> Thank You for buying the products with us. Your rating is important for us to give the good products. We would like to hear your review regarding the use of the product you have purchased on this website. We hope that through this product, you can always recover quickly and be happy.  </p>
+            </div>
+    
+            <div class="bagian2">
+                <img src="hargatermurah2.jpg" alt="">
+                <div class="isiBagian2">
+                    <h4 id="title3"> Product: HerbaWELL </h4>
+                    <!--Give Rating-->
+                    <form action="" id="formRating" name="form_rating" onsubmit=" return validationRating()">
+                        <div class="inputAtribut">
+                               <select name="droplist_rating" id="rating">
+                                <option value="">Rate This Product</option>
+                                    <option value="1"> 1 </option>
+                                    <option value="2"> 2 </option>
+                                    <option value="3"> 3 </option>
+                                    <option value="4"> 4 </option>
+                                    <option value="5"> 5 </option>
+                               </select>
+                            </div>
+    
+                            <div class="rating rating2"><!--
+                            --><a href="#5" title="Give 5 stars">★</a><!--
+                            --><a href="#4" title="Give 4 stars">★</a><!--
+                            --><a href="#3" title="Give 3 stars">★</a><!--
+                            --><a href="#2" title="Give 2 stars">★</a><!--
+                            --><a href="#1" title="Give 1 star">★</a>
+                        </div>
+                        
+                    <br>
+                    </form>
+    
+                    <div class="inputAtributButtom">
+                        <label id="errorText"></label>
+                    </div>
+                    <div class="inputAtributButtom">
+                        <button  id="ratingButton" onclick="validationRating()" > Submit Rating </button>
+                    </div>    
+    
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+    <div class="footer">
+        <div class="informasiKiri">
+            <h1> MeKnots </h1>
+            <h2> Contact Us </h2>
+            <h3> Address: Jln. Metro Duta Kav UE Pondok Indah, Jakarta Selatan, DKI Jakarta </h3>
+            <h3> Email: meknotsoffiacial@yahoo.com </h3>
+            <h3> Phone: 081236938742 </h3>
+        </div>
+
+        <div class="informasiKanan">
+            <h2> Follow Us </h2>
+            <h3> Facebook: MeKnotsOfficial</h3>
+            <h3> Instagram: MeKnots</h3>
+            <h3> Twitter: @meknotsid </h3>
+        </div>
+    </div>
+    
+</body>
+</html>

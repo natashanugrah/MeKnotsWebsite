@@ -1,0 +1,128 @@
+.allClass{
+    margin: 0;
+}
+.isiJudul{
+    display: flex;
+}
+.Gambar-Judul img{
+    width: 10vw;
+    height: 8vw;
+}
+.Judul-tulisan h1 {
+    margin: 0;
+    font-size: 2vw;
+    color: black;
+    font-family: Arial;
+}
+.Judul-tulisan h2 {
+    margin: 0;
+    font-size: 1.5vw;
+    color: black;
+    font-family: Arial;
+}
+.isiHeader{
+    padding: 1vw;
+    display: flex;
+    background-color: blanchedalmond;
+}
+.isiKiri{
+    width: 70%;
+    display: flex;
+}
+.isiKiri a {
+    font-size: 1vw;
+    text-decoration: none;
+    color: blue;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+.verticalLine{
+    border-left: 1px solid black;
+    height: 1.3vw;
+    margin-left: 0.5vw;
+}
+.isiKanan{
+    width: 30%;
+}
+.isiKanan a{
+    font-size: 1vw;
+    text-decoration: none;
+    color: black;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+
+.isiRating{
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-image: url(gambarapotik.jpg) ;
+}
+.Rating{
+    padding-left: 7vw;
+    padding-top: 7vw;
+    padding-bottom: 7vw;
+    padding-right: 0;
+    width: 40%;
+    margin-left: 50vw;
+}
+.Rating h2{
+    margin: 0;
+}
+.bagian1{
+    display: inline-block;
+    text-align: justify;
+}
+.bagian2{
+    display: flex;
+}
+.bagian2 img{
+    width: 20vw;
+    height: 18vw;
+}
+.isiBagian2 {
+    margin-left: 3vw;
+}
+.isiBagian2 h4{
+    font-size: 1.6vw;
+}
+.rating{
+    text-decoration: none;
+}
+.inputAtributButtom{
+    margin-bottom: 1vw;
+}
+.inputAtributButtom button{
+    font-size: 1vw;
+    background-color: aqua;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    border-radius: 10px;
+}
+.footer{
+    background-color: #c1c1c1;
+    display: flex;
+    padding-top: 3vw;
+    padding-bottom: 2vw;
+}
+.informasiKiri{
+    width: 50%;
+    margin-left: 3vw;
+}
+.informasiKanan{
+    width: 50%;
+    margin-left: 5vw;
+}
+.informasiKiri h1,h2,h6{
+    margin: 0;
+    margin-bottom: 1vw;
+}
+.informasiKanan h2,h3 {
+    margin: 0;
+    margin-bottom: 1vw;
+}
+

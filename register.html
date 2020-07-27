@@ -1,0 +1,158 @@
+<!--Referensi Local Storage: https://www.youtube.com/watch?v=k8yJCeuP6I8&t=666s-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="RegisterCss.css">
+    <script src="register.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        #errorText{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="allClass">
+    <div class="header">
+        <div class="isiJudul">
+            <div class="Gambar-Judul">
+                <img src="ganbar_hati.png" alt="">
+            </div>
+            <div class="Judul-tulisan">
+                <h1> MeKnots </h1>
+                <h2> Bring You Healthy Life</h2>
+            </div>
+        </div>
+
+        <div class="isiHeader">
+            <div class="isiKiri">
+                <a href="register.html">REGISTER </a>
+                <div class="verticalLine"></div>
+                <a href="login.html">LOGIN</a>
+            </div>
+            <div class="isiKanan">
+                <!--Member harus register dan login dulu baru bisa akses semua halaman-->
+                <!--<a href="home.html">Home</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="rating.html">Rating</a>
+                <a href="forum.html">Forum</a> -->
+            </div>
+        </div>
+
+    </div>
+<div class="SemuaIsi">
+    <div class="bagianKiri">
+        <div class="title1">
+            <h2> Want to see our products <br> and any information <br> from us? </h2>
+        </div>
+
+        <div class="title2">
+            <h1> Sign Up, It's Free!</h1>
+        </div>
+    </div>
+
+    <div class="bagianKanan">
+        <h1 id="titleRegister"> Create an Account </h1>
+        <form action="login.html" class="Input" id="formRegister" name="register" onsubmit=" return validationRegister()">
+            <!--Fullname-->
+            <div class="inputAtribut">
+                <h3 id="tFullname"> Fullname: </h3>
+                <input class="input-fieldName" type="text" id="fullname" name="tfFullname">
+            </div>
+
+            <!--Username-->
+            <div class="inputAtribut">
+                <h3 id="tUsername"> Username: </h3>
+                <input class="input-fieldUsername" type="text" id="username" name="tfUsername">
+            </div>
+
+            <!--Date of Birth-->
+            <div class="inputAtributDate">
+               <h3 id="tDOB"> Date of Birth: </h3>
+               <div class="InputDate">
+                    <div class="day">
+                        <select  class = "date" name="dob_date" id="date" onclick="checkDay()">
+                            <option value=""> Day </option>
+                        </select>
+                    </div>
+                    <div class="month">
+                        <select class = "date" name="dob_month" id="month">
+                            <option value=""> Month </option>
+                            <option value="january"> January </option>
+                            <option value="february"> February </option>
+                            <option value="march"> March </option>
+                            <option value="april"> April </option>
+                            <option value="may"> May </option>
+                            <option value="june"> June </option>
+                            <option value="july"> July </option>
+                            <option value="august"> August </option>
+                            <option value="september"> September </option>
+                            <option value="october"> October </option>
+                            <option value="november"> November </option>
+                            <option value="december"> December </option>
+                        </select>
+                    </div>
+               
+                    <div class="year">
+                        <select class = "date" name="dob_year" id="year" onclick="checkYear()">
+                            <option value=""> Year </option>
+                        </select>
+                    </div>
+                </div>
+                   
+            </div>
+
+            <!--Gender-->
+            <div class="inputAtributGender">
+                <h3 id="tGender"> Gender: </h3>
+                <input class="input-field" type="radio" id="inputGenderMale" value="male" name="genderButton"> <label for="inputGenderMale"> Male </label> </input>
+                <input class="input-field" type="radio" id="inputGenderFemale" value="female" name="genderButton"> <label for="inputGenderFemale"> Female </label> </input>
+            </div>
+
+            <!--Email-->
+            <div class="inputAtribut">
+                <h3 id="tEmail"> Email: </h3>
+                <input class="input-fieldEmail" type="text" id="email" name="tfEmail">
+            </div>
+
+            <!--Password-->
+            <div class="inputAtribut">
+                <h3 id="tPassword"> Password: </h3>
+                <input class="input-fieldpassword" type="password" id="password" name="tfPassword">
+            </div>
+
+            <br> 
+        </form>
+
+        <div class="inputAtributButtom">
+            <label id="errorText"></label>
+        </div>
+        <div class="inputAtributButtom">
+            <button  id="registerButton" onclick="validationRegister()" > SIGN UP </button>
+        </div>
+
+    </div>
+
+</div>
+  
+    <div class="footer">
+        <div class="informasiKiri">
+            <h1> MeKnots </h1>
+            <h2> Contact Us </h2>
+            <h3> Address: Jln. Metro Duta Kav UE Pondok Indah, Jakarta Selatan, DKI Jakarta </h6>
+            <h3> Email: meknotsoffiacial@yahoo.com </h6>
+            <h3> Phone: 081236938742 </h6>
+        </div>
+
+        <div class="informasiKanan">
+            <h2> Follow Us </h2>
+            <h3> Facebook: MeKnotsOfficial</h3>
+            <h3> Instagram: MeKnots</h3>
+            <h3> Twitter: @meknotsid </h3>
+        </div>
+    </div>
+    
+</body>
+</html>
